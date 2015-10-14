@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: docker
+    active: cloud
 ---
 spring:
   profiles: cloud
@@ -21,10 +21,10 @@ eureka:
   instance:
     hostname: discovery
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://discovery-77.cfapps.io/eureka/
+      defaultZone: http://discovery-7714.cfapps.io/eureka/
 ---
 spring:
   profiles: docker

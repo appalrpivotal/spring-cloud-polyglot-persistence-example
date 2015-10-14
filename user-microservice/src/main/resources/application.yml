@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: docker
+    active: cloud
 ---
 spring:
   profiles: cloud
@@ -9,10 +9,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-77.cfapps.io/eureka/
+      defaultZone: http://discovery-7714.cfapps.io/eureka/
   instance:
-    hostname: user-77.cfapps.io
+    hostname: user-7714.cfapps.io
     nonSecurePort: 80
+    preferIpAddress: false
 ribbon:
   eureka:
     enabled: true

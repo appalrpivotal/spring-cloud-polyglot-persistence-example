@@ -11,8 +11,8 @@
     <modules>
         <module>user-microservice</module>
         <module>discovery-microservice</module>
-        <module>api-gateway-microservice</module>
         <module>config-microservice</module>
+         <module>api-gateway-microservice</module>
         <module>movie-microservice</module>
         <module>ui-search</module>
         <module>rating-microservice</module>

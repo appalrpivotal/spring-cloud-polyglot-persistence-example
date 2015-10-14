@@ -9,7 +9,7 @@ spring:
     name: moviesui
   cloud:
     config:
-      uri: http://config-99.cfapps.io/
+      uri: http://config-9914.cfapps.io/
 encrypt:
   failOnError: false
 ---

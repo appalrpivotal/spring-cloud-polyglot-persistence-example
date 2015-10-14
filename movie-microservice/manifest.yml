@@ -1,0 +1,11 @@
+---
+applications:
+- name: movie
+  memory: 1G
+  instances: 1
+  timeout: 180
+  host: movie-7714
+  domain: cfapps.io
+  path: ./movie-microservice/target/movie-microservice-0.1.0.jar
+  services:
+    - MYSQl

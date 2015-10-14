@@ -1,12 +1,12 @@
 spring:
   profiles:
-    active: docker
+    active: cloud
 ---
 spring:
   profiles: cloud
   jpa:
     show_sql: false
-    database: MYSQL
+    database: mysql
     hibernate:
       ddl-auto: none
 server:
@@ -14,10 +14,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-77.cfapps.io/eureka/
+      defaultZone: http://discovery-7714.cfapps.io/eureka/
   instance:
-    hostname: movie-77.cfapps.io
+    hostname: movie-7714.cfapps.io
     nonSecurePort: 80
+    preferIpAddress: false
 ribbon:
   eureka:
     enabled: true

@@ -9,10 +9,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-77.cfapps.io/eureka/
+      defaultZone: http://discovery-7714.cfapps.io/eureka/
   instance:
-    hostname: ui-search-77.cfapps.io
+    hostname: moviesui
     nonSecurePort: 80
+    preferIpAddress: false
 ribbon:
   eureka:
     enabled: true
