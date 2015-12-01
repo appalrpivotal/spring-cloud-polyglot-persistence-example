@@ -1,5 +1,17 @@
 ---
 applications:
+- name: config
+  memory: 512M
+  instances: 1
+  host: config-99
+  domain: cfapps.io
+  path: ./config-microservice/target/config-microservice-0.1.0.jar
+- name: discovery
+  memory: 512M
+  instances: 1
+  host: discovery-77
+  domain: cfapps.io
+  path: ./discovery-microservice/target/discovery-microservice-0.1.0.jar
 - name: gateway
   memory: 512M
   instances: 1
